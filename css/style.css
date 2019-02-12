@@ -1,0 +1,375 @@
+/*-------------------------------------------------- Fonts -----------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+
+/*-------------------------------------------------- Reset CSS -----------------------*/
+
+img {
+	max-width: 100%;
+	border: none;
+}
+li{
+	list-style: none;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, a, b, ul, li {
+	margin: 0;
+	padding: 0;
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+a:hover, a:focus {
+    color: #E93100;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+
+
+/*-------------------------------------------------- Common Class -----------------------*/
+
+section {
+    padding: 75px 0;
+}
+.section-heading {
+    padding: 10px;
+    display: table;
+    margin: 0 auto 50px auto;
+    border: 4px solid #333;
+    text-transform: uppercase;
+    position: relative;
+    border-right-color: #E93100;
+    font-weight: 600;
+}
+.section-heading span {
+    color: #E93100;
+}
+.section-heading:before {
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background: #E93100;
+    content: "";
+    top: -4px;
+    right: -4px;
+}
+.section-heading:after {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: #E93100;
+    content: "";
+    bottom: -4px;
+    right: -4px;
+}
+.space {
+    margin-bottom: 5px;
+}
+.space2 {
+    margin-bottom: 10px;
+}
+.white {
+    color: #fff;
+}
+.color {
+	color: #e93100;
+}
+.link {
+    padding: 10px;
+    border: 1px solid;
+    color: #e93100;
+    display: table;
+    text-transform: uppercase;
+}
+.link:hover {
+    background: #e93100;
+    color: #fff;
+    border-color: #e93100;
+}
+
+
+
+/*-------------------------------------------------- Body CSS -----------------------*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+    font-weight: 600;
+}
+
+
+
+/*-------------------------------------------------- Header CSS -----------------------*/
+
+.navbar-brand {
+    padding: 10px;
+    cursor: pointer;
+}
+.navbar-default {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+.navbar-nav>li {
+    padding: 20px;
+    cursor: pointer;
+}
+.navbar-nav>li:hover {
+    background: #e93100;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f1f1f1;
+}
+.menu_bg {
+    background: #333;
+}
+
+
+
+/*-------------------------------------------------- Slider CSS -----------------------*/
+
+#slider {
+    padding: 150px;
+    background: gray;
+}
+
+
+
+/*-------------------------------------------------- About CSS -----------------------*/
+
+#about {
+    background: #fff;
+}
+.pricing li {
+    padding: 7px 15px;
+    border: 1px solid gray;
+    border-top: 0;
+}
+.pricing-heading {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.pricing-heading h2 {
+    margin-bottom: 10px;
+}
+.pricing-heading h3 strike {
+    display: block;
+    font-size: 70%;
+}
+.pricing li span {
+    float: right;
+}
+.pricing button {
+    background: green;
+    color: white;
+    padding: 13px;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/*-------------------------------------------------- Testimonial CSS -----------------------*/
+
+#text-slider{
+    background: #ccc;
+}
+#text-slider .item {
+    min-height: 240px;
+}
+#text-slider .item p {
+    max-width: 730px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.carousel-indicators li,
+.carousel-indicators .active{
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border-radius: 0;
+    border-color: #000;
+}
+.carousel-indicators .active{
+    background-color: #000;
+    border-color: #000;
+}
+
+
+
+/*-------------------------------------------------- Contact CSS -----------------------*/
+
+#contact {
+    font-weight: 400;
+}
+form {
+    overflow: hidden;
+}
+form .col-md-1,
+form .col-md-4,
+form .col-md-8{
+    padding: 0 5px;
+	position: relative;
+}
+form input[type="text"], 
+form input[type="email"], 
+form select, 
+form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 15px;
+    height: 42px;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 0;
+}
+form textarea {
+    width: 100%;
+    min-height: 198px;
+    max-width: 100%;
+    resize: none;
+}
+form input[type="submit"] {
+    color: #000000;
+    background: transparent;
+    border: 1px solid;
+    text-transform: uppercase;
+    margin: 5px;
+    position: absolute;
+    top: 20px;
+    right: -58px;
+    transform: rotate(35deg);
+    width: 200px;
+    padding: 5px;
+}
+
+
+
+/*-------------------------------------------------- Footer CSS -----------------------*/
+
+.footer {
+    background: #333;
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer-widget {
+    padding: 50px 0 30px;
+}
+#footer p {
+    font-size: 14px;
+}
+.address p {
+    padding-bottom: 5px;
+}
+.address .icon {
+    height: 20px;
+    width: 20px;
+    float: left;
+    font-size: 1.2857em;
+    line-height: 15px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 6px;
+    text-align: center;
+}
+i.fa.fa-envelope {
+    font-size: 15px;
+}
+.our_product a {
+    color: #fff;
+    padding: 4px;
+    display: block;
+    font-weight: 400;
+}
+.our_product a:hover {
+    color: #e93100;
+}
+.widget ul {
+    display: table;
+    margin: 0 auto;
+}
+.follow li {
+    float: left;
+}
+.follow li a {
+    height: 55px;
+    width: 55px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    line-height: 55px;
+}
+.fb {
+    background-color: #47639e;
+}
+.twi {
+    background-color: #00abeb;
+}
+.lin {
+    background-color: #007bb6;
+}
+.gplus {
+    background-color: #dd4b39;
+}
+.skp {
+    background-color: #00acec;
+}
+.copyright {
+    background: #222;
+    padding: 10px 0;
+}
+.copyright p:first-child {
+    float: left;
+}
+.copyright p:last-child {
+    float: right;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------- Transition CSS -----------------------*/
+
+a,
+li,
+.element-item img,
+.team-member:hover .member-details {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+}
